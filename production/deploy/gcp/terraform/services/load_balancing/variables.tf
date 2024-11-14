@@ -39,6 +39,12 @@ variable "gcp_project_id" {
   type        = string
 }
 
+variable "gcp_dns_zones_project_id" {
+  description = "The name of the Google Cloud project where DNS zones are managed."
+  type        = string
+  default     = null
+}
+
 variable "frontend_domain_name" {
   description = "Domain name for global external LB"
   type        = string
